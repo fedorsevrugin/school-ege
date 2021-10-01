@@ -1,0 +1,11 @@
+#!/bin/python3
+
+string = "8" * 70
+
+while ("2222" in string) or ("8888" in string):
+	if "2222" in string:
+		string = string.replace("2222", "88", 1)
+	else:
+		string = string.replace("8888", "22", 1)
+
+print(string) # 22
